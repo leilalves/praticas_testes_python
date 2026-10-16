@@ -18,7 +18,7 @@ def validar_senha(senha):
     """
     problemas = []
 
-    if len(senha) <= TAMANHO_MINIMO:
+    if len(senha) < TAMANHO_MINIMO:
         problemas.append("Use no mínimo 8 caracteres.")
 
     if not any(c.isupper() for c in senha):
